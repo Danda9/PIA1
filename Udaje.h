@@ -10,7 +10,7 @@ class Udaje
         Udaje();
         //void nacti_udaje(bool& k);
         virtual ~Udaje();
-        std::string jmeno_out, prijmeni_out;
+        std::string jmeno_out, prijmeni_out, vzdelani_out;
         int vek_out;
         float vyska_out;
         bool kk();
@@ -22,7 +22,7 @@ class Udaje
 
     private:
         std::string pomoc;
-        std::string jmeno(), prijmeni();
+        std::string jmeno(), prijmeni(), vzdelani();
         float pomoc1;
         int pomoc2;
         bool kontrola;

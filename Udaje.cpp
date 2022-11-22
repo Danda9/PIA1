@@ -7,6 +7,7 @@ Udaje::Udaje()
     prijmeni_out=prijmeni();
     vyska_out=vyska();
     vek_out=vek();
+    vzdelani_out=vzdelani();
     //k = kk();
     //ctor
 }
@@ -71,6 +72,37 @@ bool Udaje::kk(){
     else{
         return false;
     }
+}
+
+std::string Udaje::vzdelani(){
+
+    int skola1;
+    bool kontrola=true;
+
+    do{
+        std::cout << "Zadej dosazene vzdelani: 1-Zakladni 2-Stredni 3-Vysokoskolske \n";
+        std::cin >> skola1;
+        if (skola1 == 1) {
+            //skola = "zakladni";
+            kontrola = false;
+            return "zakladni";
+
+        }
+        else if (skola1 == 2) {
+            //skola = "stredni";
+            kontrola = false;
+            return "stredoskolske";
+        }
+        else if (skola1 == 3){
+            //skola = "vysokoskolske";
+            kontrola = false;
+            return "vysokoskolske";
+        }
+        else{
+            std::cout << "Zadal jsi nespravne hodnoty!\n ";
+            kontrola = true;
+        }
+    }while (kontrola == true);
 }
 //std::vector Udaje::info(){
 
